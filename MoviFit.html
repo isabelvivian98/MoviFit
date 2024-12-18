@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal de un estudiante de Ingeniería de Sistemas e Informática">
+    <title>Mi Página Personal - Estudiante de Ingeniería de Sistemas e Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9e1e6; /* Rosa suave */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Texto negro */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Alineación superior */
+            height: 100vh;
+            overflow-y: auto;
+        }
+        header {
+            max-width: 900px;
+            margin: 20px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /*titulos*/
+        h1, h2 {
+            text-align: center;
+            color: #ff6b81; /* Rosa vibrante */
+            margin: 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        nav {
+            text-align: center;
+            background-color: #f9e1e6;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-top: 30px;
+        }
+        .skills div, .projects div {
+            background-color: #ff6b81; /* Rosa vibrante */
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #f9e1e6;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilo para el botón de descarga */
+        .cv-button {
+            display: inline-block;
+            background-color: #ff6b81; /* Rosa vibrante */
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .cv-button:hover {
+            background-color: #ff4d5c; /* Cambio de color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página personal</h1>
+        <p>Estudiante de Ingeniería de Sistemas e Informática</p>
+    </header>
+
+    <nav>
+        <a href="#about">Acerca de mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="content">
+        <section id="about" class="section about">
+            <h2>Acerca de mí</h2>
+            <img src="fondo.jpeg" alt="fondo.jpeg">
+            <p>Soy estudiante de Ingeniería de Sistemas e Informática. Me apasiona la programación y las nuevas tecnologías. Busco constantemente mejorar mis habilidades y aprender nuevas herramientas para resolver problemas de forma eficiente y creativa.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div>
+                    <h3>Programación</h3>
+                    <p>Dominio de lenguajes como Java, Python, C++, y Visual Studio Code.</p>
+                </div>
+                <div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Experiencia en HTML, CSS, bases de datos SQL.</p>
+                </div>
+                <div>
+                    <h3>Gestión de Proyectos</h3>
+                    <p>Conocimientos en metodologías ágiles como Scrum y herramientas de gestión de calidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Proyectos</h2>
+            <div class="projects">
+                <div>
+                    <h3>Aplicación Web para mejorar la salud MoviFit</h3>
+                    <p>Desarrollé una aplicación web utilizando HTML que permite a los usuarios reservar sus horarios de atención, con funciones de recordatorio y seguimiento de su rehabilitación física.</p>
+                </div>
+                <div>
+                    <h3>Sistema de Inventarios Mundo Gatitos</h3>
+                    <p>Implementé un sistema de inventarios utilizando Java y MySQL para gestionar productos, ventas y compras en tiempo real para los peluditos y consentidos de la casa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo a <a href="mailto:vivianacayoalanoca@gmail.com" style="color: #ff6b81;">vivianacayoalanoca@gmail.com</a>.</p>
+
+            <!-- Botón para descargar CV -->
+            <a href="CV Alanoca Viviana.pdf" download="CV_Viviana_Cayo" class="cv-button">Descargar mi CV</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Todos los derechos reservados Viviana</p>
+    </footer>
+</body>
+</html>
